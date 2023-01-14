@@ -16,6 +16,7 @@ app.use(errorHandler)
 
 console.log( process.env.PORT)
 
-app.use('/api/todos', require('./routes/api'))
+app.use('/api/users', require('./routes/userRoute'))
+app.use('/api/todos', require('./routes/todosRoute'))
 
 app.listen(port, ()=> console.log(`server started on port ${port}`))
